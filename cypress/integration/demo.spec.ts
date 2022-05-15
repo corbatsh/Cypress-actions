@@ -1,11 +1,10 @@
 describe('Demo Test', () => {
-    it('Should login into an application', () => {
-        cy.visitLoginpage()
-        cy.fixture('user').then(user => {
-            const username = user.username
-            const password = user.password
+  it('Should login into an application', () => {
+    cy.visitLoginpage()
+    cy.waitForSeconds(5)
 
-        cy.login(username, password)
-        })
+    cy.fixture('loginData').then(({ username, password }) => {
+      cy.login(username, password)
     })
+  })
 })
