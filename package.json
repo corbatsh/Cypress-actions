@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^17.0.33",
+    "caniuse-lite": "^1.0.30001340",
     "cypress": "^9.6.1",
     "cypress-mochawesome-reporter": "^3.0.1",
     "prettier": "^2.6.2",
